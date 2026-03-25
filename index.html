@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Site de Páscoa</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('sua-imagem.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: #fff;
+      text-shadow: 0 0 20px #ff69b4, 0 0 40px #ff69b4;
+      animation: brilho 3s infinite alternate;
+    }
+
+    @keyframes brilho {
+      0% {
+        opacity: 0.5;
+        transform: scale(0.9);
+        text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4;
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.1);
+        text-shadow: 0 0 30px #ffd700, 0 0 60px #ff69b4;
+      }
+      100% {
+        opacity: 0.8;
+        transform: scale(1);
+        text-shadow: 0 0 20px #ff69b4, 0 0 40px #ffd700;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Feliz Páscoa!</h1>
+</body>
+</html>
